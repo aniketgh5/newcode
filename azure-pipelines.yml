@@ -18,10 +18,10 @@ jobs:
         command: 'init'
         backendServiceArm: 'ServiceVM'
         backendAzureRmOverrideSubscriptionID: 'b35c9afa-9045-49a7-852b-e7bffe5ca332' # from provider.tf
-        backendAzureRmResourceGroupName: 'mahakal'
-        backendAzureRmStorageAccountName: 'amarnath120'
-        backendAzureRmContainerName: 'mahakal'
-        backendAzureRmKey: 'myproject.tfstate'
+        backendAzureRmResourceGroupName: 'kolkata-resource'
+        backendAzureRmStorageAccountName: 'kolkata7401'
+        backendAzureRmContainerName: 'kolkata-container'
+        backendAzureRmKey: 'kolkata.tfstate'
 
     - task: TerraformTask@5
       displayName: Terraform Validate (build)
@@ -46,10 +46,10 @@ jobs:
         command: 'init'
         backendServiceArm: 'ServiceVM'
         backendAzureRmOverrideSubscriptionID: 'b35c9afa-9045-49a7-852b-e7bffe5ca332'
-        backendAzureRmResourceGroupName: 'mahakal'
-        backendAzureRmStorageAccountName: 'amarnath120'
-        backendAzureRmContainerName: 'mahakal'
-        backendAzureRmKey: 'myproject.tfstate'
+        backendAzureRmResourceGroupName: 'kolkata-resource'
+        backendAzureRmStorageAccountName: 'kolkata7401'
+        backendAzureRmContainerName: 'kolkata-container'
+        backendAzureRmKey: 'kolkata.tfstate'
 
     - task: TerraformTask@5
       displayName: Terraform Apply (install)
